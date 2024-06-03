@@ -9,7 +9,7 @@
   "short-descriptions": {
     "en_US": "Simple count down in minutes"
   },
-  "tags": "Clock",
+  "tags": "Countdown",
   "minimum-version": "0.0.1",
   "description": "Provide a simple count down timer in minutes formatted as 00:00:00 when pressed.",
   "short-description": "Simple count down in minutes"

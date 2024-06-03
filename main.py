@@ -99,7 +99,7 @@ class DigitalCountdown(ActionBase):
 
         self.set_top_label(time_str)
 
-class ClocksPlugin(PluginBase):
+class CountdownPlugin(PluginBase):
     def __init__(self):
         super().__init__()
 
@@ -111,7 +111,7 @@ class ClocksPlugin(PluginBase):
         self.digital_countdown_holder = ActionHolder(
             plugin_base=self,
             action_base=DigitalCountdown,
-            action_id="com_core447_Clocks::DigitalCountdown",
+            action_id="com_core447_Countdown::DigitalCountdown",
             action_name=self.lm.get("actions.digital-countdown.name")
         )
         self.add_action_holder(self.digital_countdown_holder)
@@ -119,7 +119,7 @@ class ClocksPlugin(PluginBase):
         # Register plugin
         self.register(
             plugin_name=self.lm.get("plugin.name"),
-            github_repo="https://github.com/StreamController/Clocks",
+            github_repo="https://github.com/andrew-starosciak/SimpleCountdown",
             plugin_version="1.0.0",
             app_version="1.0.0-alpha"
         )
